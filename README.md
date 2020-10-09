@@ -1,5 +1,4 @@
 # Exo-d-algo
-Ce repos contient des exos d'algo que vous pourrez résoudre dans votre langage de prédilections.
 
 
 Afin d'améliorer le système informatique d'une école primaire, il t'ai demandé de réaliser un jeu de pendu.
@@ -12,3 +11,21 @@ Fonctionnment :
 
 NB: Le joueur n'a que 10 coups, passer cette limite il echoue au jeu.
 
+Voici la liste : 
+ List<string> wordsList = new List<string> {
+                "ANANAS",
+                "AMOUR",
+                "HAINE",
+                "SOLITUDE",
+                "REGRET",
+                "PASSION",
+                "ORANGE",
+                "VOITURE",
+                "EXPLORATION",
+                "VIOLATION",
+                "OEUF",
+                "GARBA",
+                "IGNAME",
+                "CONSTITUTIONNEL",
+                "MAUVAIS"
+            };
