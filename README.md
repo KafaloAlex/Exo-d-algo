@@ -8,11 +8,12 @@ Fonctionnment :
 	-A chaque coup, il saisit une lettre. Si la lettre se trouve dans le mot, l'ordi affiche le mot et la les lettres 
 	déjà trouvé.
 	-Les lettres qui ne sont pas encore trouvées seront remplacer par des étoiles;
+	-
 
 NB: Le joueur n'a que 10 coups, passer cette limite il echoue au jeu.
 
-Voici la liste : 
- List<string> wordsList = new List<string> {
+Voici un exemple de liste : 
+ Liste {
                 "ANANAS",
                 "AMOUR",
                 "HAINE",
@@ -28,4 +29,4 @@ Voici la liste :
                 "IGNAME",
                 "CONSTITUTIONNEL",
                 "MAUVAIS"
-            };
+            }
