@@ -1,0 +1,31 @@
+Pendu Game
+
+Afin d'améliorer le système informatique d'une école primaire, il t'ai demandé de réaliser un jeu de pendu.
+Fonctionnment : 
+	-L'ordinateur choisit un mot au hasard dans une liste 
+	-Le joueur tente de trouver les mots composants se mot
+	-A chaque coup, il saisit une lettre. Si la lettre se trouve dans le mot, l'ordi affiche le mot et la/les lettres 
+	trouvé(es).
+	-Les lettres qui ne sont pas encore trouvées seront remplacer par des étoiles;
+	-Cependant, si l'utilisateur entre une lettre qu'il a déjà entré, vous devez lui dire qu'il a déjà entré cette lettre sans lui retranché un coups
+
+NB: Le joueur n'a que 10 coups, passer cette limite il echoue au jeu.
+
+Voici un exemple de liste : 
+ Liste {
+                "ANANAS",
+                "AMOUR",
+                "HAINE",
+                "SOLITUDE",
+                "REGRET",
+                "PASSION",
+                "ORANGE",
+                "VOITURE",
+                "EXPLORATION",
+                "VIOLATION",
+                "OEUF",
+                "GARBA",
+                "IGNAME",
+                "CONSTITUTIONNEL",
+                "MAUVAIS"
+            }
