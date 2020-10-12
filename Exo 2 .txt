@@ -1,0 +1,43 @@
+
+THE POLISH DICTIONARY
+ Difficulté : Moyen
+
+On vous donne une expression mathématique en notation polonaise inversée et vous devez renvoyer l'expression équivalente en notation infixe avec les parenthèses correctement placées.
+
+Notation infixe
+La notation infixe est la norme pour les mathématiques, les opérateurs sont insérés entre les deux opérandes sur lesquels ils travaillent:
+5 + 3
+
+* et / ont priorité sur + et -. Cela peut être modifié en entourant certaines opérations entre parenthèses afin qu'elles doivent d'abord être calculées:
+5 + 3 * 6 = 5 + 18 = 23 -> (5 + 3) * 6 = 8 * 6 = 48
+
+Notation polonaise inversée
+En notation polonaise inversée, les opérateurs sont placés après les deux opérandes sur lesquels ils travaillent:
+5 3 +
+
+Lorsque nous calculons le résultat, nous imaginons passer par les opérateurs de gauche à droite et remplacer chacun par le résultat que nous obtenons si nous l'appliquons sur les opérandes juste à côté:
+5 3 + 10 * 8 4 + -
+8 10 * 8 4 + -
+80 8 4 + -
+80 12 -
+68
+
+Dans cette notation, nous n'avons pas besoin de nous soucier de la priorité des opérateurs ou des parenthèses, car l'ordre dans lequel les opérateurs ont été écrits dicte l'ordre.
+
+Dans ce casse-tête, vous devez également vous soucier des "variables", qui ne sont que des combinaisons de lettres, qui ne sont pas des opérateurs, elles ont le même rôle que les nombres et devraient apparaître dans le résultat de la même manière:
+pomme 3 * -> pomme * 3
+
+
+Entrée
+	Ligne 1: Un entier N pour le nombre d'opérandes et d'opérateurs dans la chaîne.
+	Ligne 2: Une chaîne composée de N opérandes et opérateurs séparés par des espaces en notation polonaise inversée.
+		Un opérateur peut être l'un des suivants: +, -, *, /.
+		Un opérande peut être un nombre ou un nom de variable.
+Sortie
+	Ligne 1: expression de notation infixe résultante avec le nombre minimum de parenthèses.
+		Il ne doit pas y avoir d'espace entre les parenthèses et leurs opérandes.
+
+Contraintes
+	1 ≤ N ≤ 100
+	1 ≤ Longueur des opérandes en caractères ≤ 10
+	Les opérandes ne peuvent être qu'une combinaison de lettres et de chiffres.
